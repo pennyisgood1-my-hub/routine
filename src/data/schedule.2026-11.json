@@ -1,0 +1,727 @@
+{
+  "schemaVersion": 1,
+  "month": "2026-11",
+  "globalNotes": [
+    "피부과 처방 중 (2026-10-30 저녁 = D+0): 니메겐(이소트레티노인) + 프리마란 아침·저녁 식후 1회씩. 빈속 금지, 아침 거르면 점심 식후로",
+    "아크닌액: 아침·저녁 세안 후 트러블 부위에 찍어 바르기 (세럼 전)",
+    "선크림(닥터지 그린 마일드 업 선 플러스): 손가락 두 마디, 두 번에 나눠, 속눈썹에서 1cm 띄우기",
+    "복용 중 금지: 압출·스패츌러·코팩·왁싱·헌혈, 비타민A 영양제, 술. 끝난 뒤 6개월까지 압출·레이저 X",
+    "다른 병원(특히 치과·항생제) 갈 때 \"이소트레티노인 복용 중\" 말하기",
+    "복용 중 중단(재진 때 의사 확인 후 복귀): 엑소 레티날, 떡솝 쌀·초록, 스트라이덱스, 나이아신아마이드 20%, 트라넥삼산 6%, B3징크, 비타민C 앰플(미개봉·냉장), 부스터 프로 전 모드, 일소 피지연화제·스패츌러, 티트리 마스크팩, 마데카21 토닝, 쿨링 젤크림, 코 오일 마사지 → 설정에서 \"사용 중지\"",
+    "수시: 립밤, 후시덤 미스트. 화장한 날 밤은 클린잇제로 → 물 묻혀 유화 먼저",
+    "피부 메모 형식(매일): 입술0-3 코피O/X 붉기0-3 따가움O/X 트러블n 기분0-3. 2 이상 또는 O가 3일 연속이면 \"재진 때 말하기\"라고 적기",
+    "신호등(복용 중): 초록 = 건조·입술 틈 → 그대로 / 노랑 = 따갑거나 붉기 2↑ → 선크림·크림만(아크닌은 의사 지시대로), 크림 늘리기 / 빨강 = 심한 각질·화끈거림·기분 저하 → 바로 병원·약국",
+    "기존 11월 계획(11/7 피지연화제, 11/9 비타민C 시작, 레티날 주 3회)은 전부 취소"
+  ],
+  "days": [
+    {
+      "date": "2026-11-01",
+      "nightType": "회복",
+      "morning": [
+        "bplain-foam",
+        "acnin",
+        "torriden-serum",
+        "cream-rx",
+        "drg-sun",
+        "rx-meds"
+      ],
+      "night": [
+        "bplain-foam",
+        "acnin",
+        "torriden-serum",
+        "cream-rx",
+        "rx-meds"
+      ],
+      "device": "쉼",
+      "notes": [
+        "D+2",
+        "🛒 올영 블프(~11/7): 일리윤 세라마이드 아토 집중 크림 세일 확인 (아직 안 삼)"
+      ]
+    },
+    {
+      "date": "2026-11-02",
+      "nightType": "회복",
+      "morning": [
+        "bplain-foam",
+        "acnin",
+        "torriden-serum",
+        "cream-rx",
+        "drg-sun",
+        "rx-meds"
+      ],
+      "night": [
+        "bplain-foam",
+        "acnin",
+        "torriden-serum",
+        "cream-rx",
+        "rx-meds"
+      ],
+      "device": "쉼",
+      "notes": [
+        "D+3",
+        "🛒 올영 블프(~11/7): 일리윤 세라마이드 아토 집중 크림 세일 확인 (아직 안 삼)"
+      ]
+    },
+    {
+      "date": "2026-11-03",
+      "nightType": "회복",
+      "morning": [
+        "bplain-foam",
+        "acnin",
+        "torriden-serum",
+        "cream-rx",
+        "drg-sun",
+        "rx-meds"
+      ],
+      "night": [
+        "bplain-foam",
+        "acnin",
+        "torriden-serum",
+        "cream-rx",
+        "rx-meds"
+      ],
+      "device": "쉼",
+      "notes": [
+        "D+4",
+        "🛒 올영 블프(~11/7): 일리윤 세라마이드 아토 집중 크림 세일 확인 (아직 안 삼)"
+      ]
+    },
+    {
+      "date": "2026-11-04",
+      "nightType": "회복",
+      "morning": [
+        "bplain-foam",
+        "acnin",
+        "torriden-serum",
+        "cream-rx",
+        "drg-sun",
+        "rx-meds"
+      ],
+      "night": [
+        "bplain-foam",
+        "acnin",
+        "torriden-serum",
+        "cream-rx",
+        "rx-meds"
+      ],
+      "device": "쉼",
+      "notes": [
+        "D+5",
+        "🛒 올영 블프(~11/7): 일리윤 세라마이드 아토 집중 크림 세일 확인 (아직 안 삼)"
+      ]
+    },
+    {
+      "date": "2026-11-05",
+      "nightType": "회복",
+      "morning": [
+        "bplain-foam",
+        "acnin",
+        "torriden-serum",
+        "cream-rx",
+        "drg-sun",
+        "rx-meds"
+      ],
+      "night": [
+        "bplain-foam",
+        "acnin",
+        "torriden-serum",
+        "cream-rx",
+        "rx-meds"
+      ],
+      "device": "쉼",
+      "notes": [
+        "D+6",
+        "🛒 올영 블프(~11/7): 일리윤 세라마이드 아토 집중 크림 세일 확인 (아직 안 삼)",
+        "📌 재진 날짜 확정하기 (11/7~11/9 중 하나로 예약)"
+      ]
+    },
+    {
+      "date": "2026-11-06",
+      "nightType": "회복",
+      "morning": [
+        "bplain-foam",
+        "acnin",
+        "torriden-serum",
+        "cream-rx",
+        "drg-sun",
+        "rx-meds"
+      ],
+      "night": [
+        "bplain-foam",
+        "acnin",
+        "torriden-serum",
+        "cream-rx",
+        "rx-meds"
+      ],
+      "device": "쉼",
+      "notes": [
+        "D+7",
+        "🛒 올영 블프(~11/7): 일리윤 세라마이드 아토 집중 크림 세일 확인 (아직 안 삼)"
+      ]
+    },
+    {
+      "date": "2026-11-07",
+      "nightType": "회복",
+      "morning": [
+        "bplain-foam",
+        "acnin",
+        "torriden-serum",
+        "cream-rx",
+        "drg-sun",
+        "rx-meds"
+      ],
+      "night": [
+        "bplain-foam",
+        "acnin",
+        "torriden-serum",
+        "cream-rx",
+        "rx-meds"
+      ],
+      "device": "쉼",
+      "notes": [
+        "D+8",
+        "🛒 올영 블프(~11/7): 일리윤 세라마이드 아토 집중 크림 세일 확인 (아직 안 삼)",
+        "🏥 재진 후보일 — 확정되면 여기 메모"
+      ]
+    },
+    {
+      "date": "2026-11-08",
+      "nightType": "회복",
+      "morning": [
+        "bplain-foam",
+        "acnin",
+        "torriden-serum",
+        "cream-rx",
+        "drg-sun",
+        "rx-meds"
+      ],
+      "night": [
+        "bplain-foam",
+        "acnin",
+        "torriden-serum",
+        "cream-rx",
+        "rx-meds"
+      ],
+      "device": "쉼",
+      "notes": [
+        "D+9",
+        "🏥 재진 후보일 — 확정되면 여기 메모"
+      ]
+    },
+    {
+      "date": "2026-11-09",
+      "nightType": "회복",
+      "morning": [
+        "bplain-foam",
+        "acnin",
+        "torriden-serum",
+        "cream-rx",
+        "drg-sun",
+        "rx-meds"
+      ],
+      "night": [
+        "bplain-foam",
+        "acnin",
+        "torriden-serum",
+        "cream-rx",
+        "rx-meds"
+      ],
+      "device": "쉼",
+      "notes": [
+        "D+10",
+        "🏥 재진 후보일 — 확정되면 여기 메모",
+        "💊 약 봉투 기준 10일치 소진 예정 (10/30 저녁부터 20회 → 11/9 아침분이 마지막). 재진 전에 남은 양 확인"
+      ]
+    },
+    {
+      "date": "2026-11-10",
+      "nightType": "회복",
+      "morning": [
+        "bplain-foam",
+        "acnin",
+        "torriden-serum",
+        "cream-rx",
+        "drg-sun",
+        "rx-meds"
+      ],
+      "night": [
+        "bplain-foam",
+        "acnin",
+        "torriden-serum",
+        "cream-rx",
+        "rx-meds"
+      ],
+      "device": "쉼",
+      "notes": [
+        "D+11",
+        "재진 이후: 의사 지시대로. 중단 제품 복귀는 의사 확인 후에만"
+      ]
+    },
+    {
+      "date": "2026-11-11",
+      "nightType": "회복",
+      "morning": [
+        "bplain-foam",
+        "acnin",
+        "torriden-serum",
+        "cream-rx",
+        "drg-sun",
+        "rx-meds"
+      ],
+      "night": [
+        "bplain-foam",
+        "acnin",
+        "torriden-serum",
+        "cream-rx",
+        "rx-meds"
+      ],
+      "device": "쉼",
+      "notes": [
+        "D+12"
+      ]
+    },
+    {
+      "date": "2026-11-12",
+      "nightType": "회복",
+      "morning": [
+        "bplain-foam",
+        "acnin",
+        "torriden-serum",
+        "cream-rx",
+        "drg-sun",
+        "rx-meds"
+      ],
+      "night": [
+        "bplain-foam",
+        "acnin",
+        "torriden-serum",
+        "cream-rx",
+        "rx-meds"
+      ],
+      "device": "쉼",
+      "notes": [
+        "D+13"
+      ]
+    },
+    {
+      "date": "2026-11-13",
+      "nightType": "회복",
+      "morning": [
+        "bplain-foam",
+        "acnin",
+        "torriden-serum",
+        "cream-rx",
+        "drg-sun",
+        "rx-meds"
+      ],
+      "night": [
+        "bplain-foam",
+        "acnin",
+        "torriden-serum",
+        "cream-rx",
+        "rx-meds"
+      ],
+      "device": "쉼",
+      "notes": [
+        "D+14"
+      ]
+    },
+    {
+      "date": "2026-11-14",
+      "nightType": "회복",
+      "morning": [
+        "bplain-foam",
+        "acnin",
+        "torriden-serum",
+        "cream-rx",
+        "drg-sun",
+        "rx-meds"
+      ],
+      "night": [
+        "bplain-foam",
+        "acnin",
+        "torriden-serum",
+        "cream-rx",
+        "rx-meds"
+      ],
+      "device": "쉼",
+      "notes": [
+        "D+15",
+        "📷 체크포인트 사진 (같은 장소·조명·각도, 세안 직후 + 오후, 정면·양옆·코 가까이) — 처방 전후 비교용"
+      ],
+      "checkpoint": true
+    },
+    {
+      "date": "2026-11-15",
+      "nightType": "회복",
+      "morning": [
+        "bplain-foam",
+        "acnin",
+        "torriden-serum",
+        "cream-rx",
+        "drg-sun",
+        "rx-meds"
+      ],
+      "night": [
+        "bplain-foam",
+        "acnin",
+        "torriden-serum",
+        "cream-rx",
+        "rx-meds"
+      ],
+      "device": "쉼",
+      "notes": [
+        "D+16"
+      ]
+    },
+    {
+      "date": "2026-11-16",
+      "nightType": "회복",
+      "morning": [
+        "bplain-foam",
+        "acnin",
+        "torriden-serum",
+        "cream-rx",
+        "drg-sun",
+        "rx-meds"
+      ],
+      "night": [
+        "bplain-foam",
+        "acnin",
+        "torriden-serum",
+        "cream-rx",
+        "rx-meds"
+      ],
+      "device": "쉼",
+      "notes": [
+        "D+17"
+      ]
+    },
+    {
+      "date": "2026-11-17",
+      "nightType": "회복",
+      "morning": [
+        "bplain-foam",
+        "acnin",
+        "torriden-serum",
+        "cream-rx",
+        "drg-sun",
+        "rx-meds"
+      ],
+      "night": [
+        "bplain-foam",
+        "acnin",
+        "torriden-serum",
+        "cream-rx",
+        "rx-meds"
+      ],
+      "device": "쉼",
+      "notes": [
+        "D+18"
+      ]
+    },
+    {
+      "date": "2026-11-18",
+      "nightType": "회복",
+      "morning": [
+        "bplain-foam",
+        "acnin",
+        "torriden-serum",
+        "cream-rx",
+        "drg-sun",
+        "rx-meds"
+      ],
+      "night": [
+        "bplain-foam",
+        "acnin",
+        "torriden-serum",
+        "cream-rx",
+        "rx-meds"
+      ],
+      "device": "쉼",
+      "notes": [
+        "D+19"
+      ]
+    },
+    {
+      "date": "2026-11-19",
+      "nightType": "회복",
+      "morning": [
+        "bplain-foam",
+        "acnin",
+        "torriden-serum",
+        "cream-rx",
+        "drg-sun",
+        "rx-meds"
+      ],
+      "night": [
+        "bplain-foam",
+        "acnin",
+        "torriden-serum",
+        "cream-rx",
+        "rx-meds"
+      ],
+      "device": "쉼",
+      "notes": [
+        "D+20"
+      ]
+    },
+    {
+      "date": "2026-11-20",
+      "nightType": "회복",
+      "morning": [
+        "bplain-foam",
+        "acnin",
+        "torriden-serum",
+        "cream-rx",
+        "drg-sun",
+        "rx-meds"
+      ],
+      "night": [
+        "bplain-foam",
+        "acnin",
+        "torriden-serum",
+        "cream-rx",
+        "rx-meds"
+      ],
+      "device": "쉼",
+      "notes": [
+        "D+21"
+      ]
+    },
+    {
+      "date": "2026-11-21",
+      "nightType": "회복",
+      "morning": [
+        "bplain-foam",
+        "acnin",
+        "torriden-serum",
+        "cream-rx",
+        "drg-sun",
+        "rx-meds"
+      ],
+      "night": [
+        "bplain-foam",
+        "acnin",
+        "torriden-serum",
+        "cream-rx",
+        "rx-meds"
+      ],
+      "device": "쉼",
+      "notes": [
+        "D+22"
+      ]
+    },
+    {
+      "date": "2026-11-22",
+      "nightType": "회복",
+      "morning": [
+        "bplain-foam",
+        "acnin",
+        "torriden-serum",
+        "cream-rx",
+        "drg-sun",
+        "rx-meds"
+      ],
+      "night": [
+        "bplain-foam",
+        "acnin",
+        "torriden-serum",
+        "cream-rx",
+        "rx-meds"
+      ],
+      "device": "쉼",
+      "notes": [
+        "D+23"
+      ]
+    },
+    {
+      "date": "2026-11-23",
+      "nightType": "회복",
+      "morning": [
+        "bplain-foam",
+        "acnin",
+        "torriden-serum",
+        "cream-rx",
+        "drg-sun",
+        "rx-meds"
+      ],
+      "night": [
+        "bplain-foam",
+        "acnin",
+        "torriden-serum",
+        "cream-rx",
+        "rx-meds"
+      ],
+      "device": "쉼",
+      "notes": [
+        "D+24"
+      ]
+    },
+    {
+      "date": "2026-11-24",
+      "nightType": "회복",
+      "morning": [
+        "bplain-foam",
+        "acnin",
+        "torriden-serum",
+        "cream-rx",
+        "drg-sun",
+        "rx-meds"
+      ],
+      "night": [
+        "bplain-foam",
+        "acnin",
+        "torriden-serum",
+        "cream-rx",
+        "rx-meds"
+      ],
+      "device": "쉼",
+      "notes": [
+        "D+25"
+      ]
+    },
+    {
+      "date": "2026-11-25",
+      "nightType": "회복",
+      "morning": [
+        "bplain-foam",
+        "acnin",
+        "torriden-serum",
+        "cream-rx",
+        "drg-sun",
+        "rx-meds"
+      ],
+      "night": [
+        "bplain-foam",
+        "acnin",
+        "torriden-serum",
+        "cream-rx",
+        "rx-meds"
+      ],
+      "device": "쉼",
+      "notes": [
+        "D+26",
+        "🛒 올영데이 (선크림·크림 재구매 후보)"
+      ]
+    },
+    {
+      "date": "2026-11-26",
+      "nightType": "회복",
+      "morning": [
+        "bplain-foam",
+        "acnin",
+        "torriden-serum",
+        "cream-rx",
+        "drg-sun",
+        "rx-meds"
+      ],
+      "night": [
+        "bplain-foam",
+        "acnin",
+        "torriden-serum",
+        "cream-rx",
+        "rx-meds"
+      ],
+      "device": "쉼",
+      "notes": [
+        "D+27",
+        "🛒 올영데이 (선크림·크림 재구매 후보)"
+      ]
+    },
+    {
+      "date": "2026-11-27",
+      "nightType": "회복",
+      "morning": [
+        "bplain-foam",
+        "acnin",
+        "torriden-serum",
+        "cream-rx",
+        "drg-sun",
+        "rx-meds"
+      ],
+      "night": [
+        "bplain-foam",
+        "acnin",
+        "torriden-serum",
+        "cream-rx",
+        "rx-meds"
+      ],
+      "device": "쉼",
+      "notes": [
+        "D+28",
+        "🛒 올영데이 (선크림·크림 재구매 후보)"
+      ]
+    },
+    {
+      "date": "2026-11-28",
+      "nightType": "회복",
+      "morning": [
+        "bplain-foam",
+        "acnin",
+        "torriden-serum",
+        "cream-rx",
+        "drg-sun",
+        "rx-meds"
+      ],
+      "night": [
+        "bplain-foam",
+        "acnin",
+        "torriden-serum",
+        "cream-rx",
+        "rx-meds"
+      ],
+      "device": "쉼",
+      "notes": [
+        "D+29"
+      ]
+    },
+    {
+      "date": "2026-11-29",
+      "nightType": "회복",
+      "morning": [
+        "bplain-foam",
+        "acnin",
+        "torriden-serum",
+        "cream-rx",
+        "drg-sun",
+        "rx-meds"
+      ],
+      "night": [
+        "bplain-foam",
+        "acnin",
+        "torriden-serum",
+        "cream-rx",
+        "rx-meds"
+      ],
+      "device": "쉼",
+      "notes": [
+        "D+30"
+      ]
+    },
+    {
+      "date": "2026-11-30",
+      "nightType": "회복",
+      "morning": [
+        "bplain-foam",
+        "acnin",
+        "torriden-serum",
+        "cream-rx",
+        "drg-sun",
+        "rx-meds"
+      ],
+      "night": [
+        "bplain-foam",
+        "acnin",
+        "torriden-serum",
+        "cream-rx",
+        "rx-meds"
+      ],
+      "device": "쉼",
+      "notes": [
+        "D+31",
+        "🛒 연말 올영세일 시작 (선크림·크림 재구매 후보)"
+      ]
+    }
+  ]
+}
