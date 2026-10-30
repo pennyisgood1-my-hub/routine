@@ -21,7 +21,7 @@ const base = `http://localhost:${PORT}`
 const seedLogs = {
   schemaVersion: 1,
   logs: {
-    '2026-10-30': { date: '2026-10-30', doneMorning: [], doneNight: ['rx-meds'], deviceDone: false, sunscreenDone: false, signal: '초록' },
+    '2026-10-30': { date: '2026-10-30', doneMorning: [], doneNight: ['bplain-foam', 'acnin', 'torriden-serum', 'cream-rx', 'rx-meds'], deviceDone: false, sunscreenDone: false, signal: '초록' },
     '2026-10-31': { date: '2026-10-31', doneMorning: ['bplain-foam', 'acnin', 'torriden-serum', 'cream-rx', 'rx-meds'], doneNight: ['bplain-foam', 'acnin', 'torriden-serum', 'cream-rx', 'rx-meds'], deviceDone: false, sunscreenDone: true, signal: '초록' },
     '2026-11-01': { date: '2026-11-01', doneMorning: ['bplain-foam', 'acnin', 'torriden-serum', 'cream-rx', 'rx-meds'], doneNight: ['bplain-foam', 'acnin', 'torriden-serum', 'cream-rx', 'rx-meds'], deviceDone: false, sunscreenDone: true, signal: '초록', skinNote: '입술1 코피X 붉기1 따가움X 트러블0 기분3' },
     '2026-11-02': { date: '2026-11-02', doneMorning: ['bplain-foam', 'acnin', 'torriden-serum', 'cream-rx', 'rx-meds'], doneNight: ['bplain-foam', 'acnin', 'cream-rx', 'rx-meds'], deviceDone: false, sunscreenDone: true, signal: '초록', skinNote: '입술2 코피X 붉기1 따가움X 트러블1 기분2' },

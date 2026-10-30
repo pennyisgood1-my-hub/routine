@@ -57,8 +57,10 @@ describe('시드 일정 2026-11 (처방 루틴)', () => {
     expect(ms.days.filter((d) => d.checkpoint)).toHaveLength(1)
   })
 
-  it('공통 규칙에 복용 중 금지·중단 제품·신호등 기준 포함', () => {
+  it('공통 규칙은 "### 제목" 섹션 구조이고 복용 중 금지·중단 제품·신호등 기준 포함', () => {
     const g = ms.globalNotes!.join('\n')
+    expect(ms.globalNotes![0].startsWith('### ')).toBe(true)
+    expect(ms.globalNotes!.filter((n) => n.startsWith('### ')).length).toBeGreaterThanOrEqual(5)
     expect(g).toContain('이소트레티노인')
     expect(g).toContain('복용 중 금지')
     expect(g).toContain('중단')
@@ -69,10 +71,10 @@ describe('시드 일정 2026-11 (처방 루틴)', () => {
 describe('시드 일정 2026-10 (처방 시작 이틀)', () => {
   const ms = MonthScheduleSchema.parse(seedOct)
 
-  it('10/30 은 저녁 약만, 10/31 은 전체 루틴', () => {
+  it('10/30 은 아침 없이 밤 전체 루틴, 10/31 은 전체 루틴', () => {
     expect(ms.days.map((d) => d.date)).toEqual(['2026-10-30', '2026-10-31'])
     expect(ms.days[0].morning).toEqual([])
-    expect(ms.days[0].night).toEqual(['rx-meds'])
+    expect(ms.days[0].night).toEqual(NIGHT)
     expect(ms.days[0].notes![0]).toBe('D+0')
     expect(ms.days[1].morning).toEqual(MORNING)
     expect(ms.days[1].notes![0]).toBe('D+1')

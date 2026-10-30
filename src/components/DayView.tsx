@@ -10,6 +10,8 @@ import { Checklist } from './Checklist'
 import { SignalPicker } from './SignalPicker'
 import { AdvisoryCard } from './AdvisoryCard'
 import { ImportScheduleModal } from './ImportScheduleModal'
+import { NoteList } from './NoteList'
+import { splitDayCounter } from '../lib/notes'
 import type { DayPlan } from '../schema'
 
 interface Props {
@@ -62,6 +64,7 @@ export function DayView({ date, isToday }: Props) {
 
   const morningIds = morningChecklist(plan, products)
   const sunIds = sunscreenProducts(plan, products)
+  const { counter, rest: dayNotes } = splitDayCounter(plan.notes)
   const progress = dayProgress(plan, log, products)
   const toItems = (ids: string[]) => ids.map((id) => ({ id, product: pmap.get(id) }))
   const allMorningDone = morningIds.length > 0 && morningIds.every((id) => log.doneMorning.includes(id))
@@ -77,6 +80,7 @@ export function DayView({ date, isToday }: Props) {
             <h1 className="text-xl font-bold leading-tight">{formatKo(date, 'M월 d일 EEEE')}</h1>
           </div>
           <div className="flex items-center gap-1.5">
+            {counter && <span className="chip bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-200">{counter}</span>}
             {plan.checkpoint && <span className="chip bg-pink-100 text-pink-700 dark:bg-pink-900/50 dark:text-pink-200">📷 체크포인트</span>}
             <NightTypeBadge type={plan.nightType} />
           </div>
@@ -164,24 +168,16 @@ export function DayView({ date, isToday }: Props) {
       <AdvisoryCard advisories={advisories} />
 
       {/* 노트 */}
-      {(plan.notes?.length || ms?.globalNotes?.length) ? (
+      {(dayNotes.length || ms?.globalNotes?.length) ? (
         <section className="card">
           <h2 className="section-title">📝 오늘 메모</h2>
-          {plan.notes?.length ? (
-            <ul className="list-disc space-y-1 pl-5 text-sm">
-              {plan.notes.map((n, i) => <li key={i}>{n}</li>)}
-            </ul>
-          ) : <p className="text-sm text-slate-400">특이사항 없음</p>}
+          {dayNotes.length ? <NoteList notes={dayNotes} /> : <p className="text-sm text-slate-400">특이사항 없음</p>}
           {ms?.globalNotes?.length ? (
             <div className="mt-3">
               <button type="button" className="btn-ghost min-h-9 px-2 text-xs" onClick={() => setShowGlobal((v) => !v)}>
-                {showGlobal ? '▾' : '▸'} 이번 달 공통 규칙 ({ms.globalNotes.length})
+                {showGlobal ? '▾' : '▸'} 이번 달 공통 규칙
               </button>
-              {showGlobal && (
-                <ul className="mt-1 list-disc space-y-1 pl-5 text-sm text-slate-600 dark:text-slate-300">
-                  {ms.globalNotes.map((n, i) => <li key={i}>{n}</li>)}
-                </ul>
-              )}
+              {showGlobal && <NoteList notes={ms.globalNotes} className="mt-2" />}
             </div>
           ) : null}
         </section>

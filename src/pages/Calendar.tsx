@@ -8,6 +8,7 @@ import { Modal, ConfirmDialog } from '../components/Modal'
 import { DayView } from '../components/DayView'
 import { ImportScheduleModal } from '../components/ImportScheduleModal'
 import { useToast } from '../components/Toast'
+import { NoteList } from '../components/NoteList'
 import { copyText } from '../lib/export'
 import { NIGHT_TYPES } from '../schema'
 
@@ -27,6 +28,7 @@ export default function CalendarPage() {
   const dates = datesOfMonth(month)
   const lead = firstWeekdayOfMonth(month)
   const todayInMonth = today.startsWith(month)
+  const typesInMonth = NIGHT_TYPES.filter((t) => ms?.days.some((d) => d.nightType === t))
   const remaining = ms ? ms.days.filter((d) => d.date >= today).length : 0
 
   const doShift = () => {
@@ -102,7 +104,7 @@ export default function CalendarPage() {
           })}
         </div>
         <div className="mt-3 flex flex-wrap gap-x-3 gap-y-1 text-[11px] text-slate-500 dark:text-slate-400">
-          {NIGHT_TYPES.map((t) => (
+          {typesInMonth.map((t) => (
             <span key={t} className="inline-flex items-center gap-1"><span className={`h-1.5 w-1.5 rounded-full ${NIGHT_TYPE_STYLE[t].dot}`} />{t}</span>
           ))}
           <span className="inline-flex items-center gap-1"><span className="h-3 w-3 rounded ring-2 ring-rose-500" style={{ borderColor: SIGNAL_STYLE.빨강.hex }} />빨강 신호</span>
@@ -113,7 +115,7 @@ export default function CalendarPage() {
       {ms?.globalNotes?.length ? (
         <section className="card">
           <h2 className="section-title">이번 달 공통 규칙</h2>
-          <ul className="list-disc space-y-1 pl-5 text-sm">{ms.globalNotes.map((n, i) => <li key={i}>{n}</li>)}</ul>
+          <NoteList notes={ms.globalNotes} />
         </section>
       ) : null}
 

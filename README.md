@@ -62,6 +62,8 @@ npm run screenshots  # 360×800 탭별 스크린샷 5장 → screenshots/ (먼�
 }
 ```
 
+`notes`/`globalNotes`는 문자열 배열이지만 앱이 마크다운처럼 보여줘요: `"### 제목"`은 섹션 제목, `"- 내용"`(또는 그냥 문장)은 불릿. 날짜 notes의 `"D+3"` 같은 줄은 헤더 칩으로 빠져요.
+
 제품 id 목록은 **설정 → 제품 마스터**(각 항목 아래 회색 모노스페이스) 또는 `src/data/products.ts`에서 확인. 내장 id:
 `bplain-foam` `bringgreen-water` `cleanitzero` `tteoksop-rice` `tteoksop-green` `stridex` `dermablock-daily` `vt-sun` `zeroid` `torriden-cream` `madeca21-soothing` `madeca21-toning` `txa6` `exo-retinal` `patheon-spot` `b3zinc` `torriden-serum` `anua-pdrn` `niacin20` `vitc15` `fucidum-mist` `booster-pro` `ilso-softener` `numbuzin-blur` `rx-meds` `acnin` `drg-sun` `cream-rx`
 
@@ -144,7 +146,8 @@ scripts/                 gen-schedule.mjs · make-icons.mjs · screenshots.mjs
   - 앱에 없는 기능은 notes/globalNotes로 대신: D+N 카운터는 각 날짜 notes 첫 줄, 재진 날짜 확정(11/5)·올영 세일·약 소진 예정(11/9) 같은 할 일도 그날 notes, 복용 중 금지·중단 제품·신호등 복용 중 버전·피부 메모 형식은 globalNotes.
   - "A 또는 B"·"화장한 날만" 같은 조건 항목은 체크리스트가 지원하지 않아 하나로 통일(세럼=토리든, 크림=`cream-rx` 묶음 제품)하거나 notes로.
   - 처방 루틴에 필요한 제품 4개(`rx-meds` 먹는 약, `acnin` 아크닌액, `drg-sun` 닥터지 선크림, `cream-rx` 크림 묶음)를 내장 제품 목록에 추가. 중단 제품은 설정 탭에서 직접 "사용 중지"로 끄면 회색 처리돼요.
-  - 10/30(D+0)은 저녁 약 1회만 있는 날로 넣어 캘린더에서 체크할 수 있게 했어요.
+  - 10/30(D+0)은 아침 없이 밤 루틴(세안부터 약까지)만 있는 날로 넣어 캘린더에서 체크할 수 있게 했어요.
+  - globalNotes는 `### 제목` + `- 항목` 구조로 써서 캘린더·오늘 화면에서 섹션/불릿으로 보여요.
 - **다크모드**는 시스템/라이트/다크 3단계. 첫 페인트 전에 `index.html` 인라인 스크립트가 클래스를 붙여 깜빡임 방지.
 - **제품 삭제**도 허용(확인 모달)하되 기본 권장은 사용 중지. "내장 제품 목록으로 되돌리기" 버튼 있음.
 - **저장소**: 키 4개 `routine.v1.products|schedules|logs|settings`. 읽을 때 zod 검증에 실패하면 원본을 `키.corrupt.<timestamp>`로 옮겨 두고 기본값으로 시작 + 토스트. 저장 실패(용량 초과 등)도 토스트.
